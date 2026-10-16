@@ -1,20 +1,15 @@
 # Python 网页爬虫与数据可视化项目
 ## 项目简介
-本项目使用Python实现网页静态数据采集，完成数据清洗、导出表格与可视化统计。
-> 爬取练习网站 books.toscrape.com，仅用于学习爬虫技术，遵守网站robots协议。
+本项目使用Python实现网页书籍数据采集，完成数据清洗、导出表格与可视化统计。
+从网页抓取书籍信息，保存到CSV文件，再对数据进行简单分析，绘制图表，完整实现「抓取-存储-分析-可视化」流程。
 
 ## 技术栈
 - Python
-- requests：请求网页，模拟浏览器访问
-- BeautifulSoup4：网页解析，提取页面文本信息
-- Pandas：数据清洗，导出CSV表格文件
-- Matplotlib：数据可视化，生成柱状统计图
+- requests：发送HTTP请求，获取网页源码
+- BeautifulSoup4：解析HTML，提取页面书籍信息
+- Pandas：数据清洗、表格处理
+- Matplotlib：数据可视化绘图
 
-## 功能
-1. 发送http请求获取网页源码
-2. 解析页面，批量提取书籍名称、价格信息
-3. 将结构化数据保存至CSV文件，可用Excel打开查看
-4. 统计价格分布，绘制柱状图可视化
-
-## 如何运行
-1. 安装依赖
+## 环境依赖安装
+```bash
+pip install requests beautifulsoup4 pandas matplotlib
